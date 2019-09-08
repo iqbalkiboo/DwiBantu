@@ -1,0 +1,500 @@
+.header{
+  position: fixed;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2e7587+50,0f801c+100 */
+  background: rgb(46,117,135); /* Old browsers */
+  background: -moz-linear-gradient(45deg, rgba(46,117,135,.95) 50%, rgba(15,128,28,.95) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, rgba(46,117,135,.95) 50%,rgba(15,128,28,.95) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, rgba(46,117,135,.95) 50%,rgba(15,128,28,.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e7587', endColorstr='#0f801c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  z-index: 999;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, .15);
+}
+
+.header a.nav-mobile{
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 20px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.header ul {
+  /* overflow: hidden; */
+}
+
+.header > ul > li{
+  position: relative;
+  float:left;
+  box-sizing: border-box;
+}
+
+.header > ul > li:nth-child(4){
+  width: 50%;
+}
+
+.header > ul.un-log > li:nth-child(5){
+  float: right;
+}
+
+.header > ul > li:last-child{
+  float:  right;
+  max-width: 8%;
+}
+
+.header > ul > li i{
+  color: #FFF;
+  display: inline-block;
+  vertical-align: middle;
+  margin: -3px 0 0 0;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.header > ul > li:nth-child(4) i{
+  position: absolute;
+  margin: -10px 0 0 0;
+  left: 15px;
+  top: 50%;
+}
+
+.header > ul > li > Link{
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 15px;
+    text-transform: uppercase;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
+}
+
+.header > ul > li:first-child > Link{
+  text-transform: none;
+  padding: 15px 15px 15px 0;
+}
+
+.header > ul > li:last-child > Link,
+.header > ul.un-log > li:nth-child(5) > Link{
+  text-transform: none;
+  padding: 15px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.header > ul.un-log > li:nth-child(5) > Link{
+  margin: 0 0 0 20px;
+}
+
+.header > ul > li > Link:hover{
+  background: rgba(255, 255, 255, .15);
+}
+
+.header > ul > li:first-child > Link:hover{
+  background: transparent;
+}
+
+.header > ul > li:last-child > Link:hover,
+.header > ul.un-log > li:nth-child(5) > Link:hover{
+  background: transparent;
+  box-shadow: inset 0 -5px 0 rgba(255, 255, 255, .5);
+}
+
+.header > ul > li > Link.is-on{
+  color: #E9AE10;
+  background: rgba(255, 255, 255, .15);
+}
+
+.header > ul > li:last-child > Link.is-on{
+  background: transparent;
+  box-shadow: inset 0 -5px 0 rgba(255, 255, 255, .5);
+}
+
+.header > ul > li > Link.is-on > i{
+  color: #E9AE10;
+}
+
+.header > ul.un-log > li:nth-child(5) > Link.is-on,
+.header > ul.un-log > li:nth-child(6) > Link.is-on{
+    background: rgba(255, 255, 255, 0);
+    box-shadow: inset 0 -5px 0 rgba(255, 255, 255, .5);
+}
+
+.header > ul > li > Link img{
+  display: block;
+}
+
+.header > ul > li:first-child > Link img{
+  height: 30px;
+}
+
+.header > ul > li:last-child > Link img{
+  float: left;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  margin: 0 5px 0 0;
+  border: 2px solid #FFF;
+  box-sizing: border-box;
+}
+
+.header > ul > li:last-child > Link.is-on img{
+  border: 2px solid #E9AE10;
+} 
+
+.header > ul > li input{
+  display: block;
+  margin: 0;
+  padding: 0 10px 0 40px;
+  height: 60px;
+  width: 100%;
+  font-size: 14px;
+  color: #FFF;
+  border: none;
+  background: transparent;
+  box-sizing: border-box;
+  appearance: none;
+  border-radius: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+}
+
+.header > ul > li input::placeholder{
+  color: #FFF;
+  opacity: .5;
+}
+
+.header > ul > li input:-ms-input-placeholder{
+  color: #FFF;
+}
+
+.header ul li input::-ms-input-placeholder{
+  color: #FFF;
+}
+
+.header > ul > li input:hover{
+  background: rgba(255, 255, 255, .15);
+}
+
+.header > ul > li input:focus{
+  outline: none;
+  background: rgba(255, 255, 255, .25);
+}
+
+
+/* 
+.root {
+  flex-grow: 1;
+}
+
+.ButtonLogin {
+  color: inherit;
+  marginRight: theme.spacing(2); 
+}
+
+.Tittle {
+  flex-grow: 1;
+} */
+
+.ul.ui-autocomplete{
+  z-index: 999;
+  width: 100% !important;
+  font-family: 'RobotoSlab', Helvetica, Arial, sans-serif;
+  border: none !important;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+.ul.ui-autocomplete li.ui-menu-item{
+  border: none;
+  float: none;
+  border-bottom: 1px solid #EEE;
+}
+
+.ul.ui-autocomplete li.ui-menu-item:last-child{
+  border-bottom: none;
+}
+
+.ul.ui-autocomplete li.ui-menu-item .ui-menu-item-wrapper{
+  padding: 15px 10px;
+  color: #666;
+  font-size: 14px;
+  line-height: 14px;
+  border: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+}
+
+.ul.ui-autocomplete li.ui-menu-item .ui-menu-item-wrapper.ui-state-active{
+  background: rgba(233, 174, 16, .25);
+  border: none;
+  margin: 0;
+}
+
+.ul.ui-autocomplete li.ui-menu-item:last-child .ui-menu-item-wrapper.ui-state-active{
+  border-radius: 0 0 10px 10px;
+}
+
+.ul.ui-autocomplete li.ui-menu-item .ui-menu-item-wrapper img{
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  margin: -5px 10px -5px 0;
+  border: 2px solid #FFF;
+  float: left;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+.ul.ui-autocomplete li.ui-menu-item .ui-menu-item-wrapper span{
+  font-size: 12px;
+  line-height: 14px;
+  display: block;
+  color: #999;
+  margin: 5px 0 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.search-empty{
+  display: none;
+  color: #999;
+  position: absolute;
+  background: #FFF;
+  border-radius: 0 0 10px 10px;
+  padding: 20px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+.ul.the-meter{
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: 2px solid #FFF;
+}
+
+.ul.the-meter li{
+  float: left;
+  width: 20%;
+  background: #DDD !important;
+  height: 10px;
+  border-right: .5px solid #FFF;
+  border-left: .5px solid #FFF;
+  box-sizing: border-box;
+}
+
+.ul.the-meter li:first-child{
+  border-left: none;
+}
+
+.ul.the-meter li:last-child{
+  border-right: none;
+}
+
+.ul.the-meter li div{
+  background: #E9AE10;
+  height: 18px;
+}
+
+.pad-top{
+  height: 100px;
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1600px){}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .header > ul > li:nth-child(4){
+        display: block;
+        width: 100%;
+    }
+    
+    .header > ul > li:nth-child(5),
+    .header > ul.un-log > li:nth-child(6){
+        position: absolute;
+        right: 20px;
+        max-width: 20%;
+    }
+    
+    .header > ul.un-log > li:nth-child(6){
+        right: 120px;
+    }
+    
+    .header > ul > li input{
+        border-radius: 5px 5px 0 0;
+    }
+    
+    .pad-top{
+        height: 160px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+    .pop-up{
+        width: 50%;
+    }
+    
+    .pop-up .con-pop,
+    .pop-up ul.the-form{
+        max-height: 50vh;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+    .pop-up{
+        width: 75%;
+    }
+    
+    .pop-up .con-pop,
+    .pop-up ul.the-form{
+        max-height: 60vh;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .header > ul > li:nth-child(4){
+        display: block;
+        width: 100%;
+    }
+    
+    .header > ul > li input{
+        border-radius: 5px 5px 0 0;
+    }
+    
+    .pad-top{
+        height: 160px;
+    }
+}
+
+@media screen and (max-width: 767px) and (orientation: landscape){
+    .pop-up{
+        width: 75%;
+    }
+    
+    .pop-up .con-pop,
+    .pop-up ul.the-form{
+        max-height: 50vh;
+    }
+    
+    .header > ul > li:nth-child(5),
+    .header > ul.un-log > li:nth-child(6){
+        position: absolute;
+        top: 0;
+        right: 20px;
+        max-width: 20%;
+    }
+    
+    .header > ul.un-log > li:nth-child(6){
+        right: 120px;
+    }
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait){
+    .pop-up{
+        width: 90%;
+    }
+    
+    .pop-up .con-pop,
+    .pop-up ul.the-form{
+        max-height: 50vh;
+    }
+    
+    .header a.nav-mobile{
+        display: block;
+    }
+    
+    .header > ul > li:nth-child(1){
+        width: 100%;
+    }
+    
+    .header > ul > li:nth-child(2),
+    .header > ul > li:nth-child(3),
+    .header > ul  > li:nth-child(5),
+    .header > ul.un-log  > li:nth-child(5),
+    .header > ul.un-log > li:nth-child(6){
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: all 200ms ease-in-out;
+        -moz-transition: all 200ms ease-in-out;
+        -webkit-transition: all 200ms ease-in-out;
+    }
+    
+    .header.show-all > ul > li:nth-child(2),
+    .header.show-all > ul > li:nth-child(3),
+    .header.show-all > ul  > li:nth-child(5),
+    .header.show-all > ul.un-log  > li:nth-child(5),
+    .header.show-all > ul.un-log > li:nth-child(6){
+        max-height: 100px;
+        opacity: 1;
+    }
+    
+    .header > ul > li:nth-child(2),
+    .header > ul > li:nth-child(3),
+    .header > ul.un-log  > li:nth-child(5),
+    .header > ul.un-log > li:nth-child(6){
+        width: 50%;
+        max-width: 50% !important;
+    }
+    
+    .header > ul  > li:nth-child(5){
+        width: 100%;
+        max-width: 100% !important;
+    }
+    
+    .header > ul > li a{
+        padding: 15px 0 !important;
+        margin: 0 !important;
+    }
+    
+    .header > ul > li:nth-child(2) a,
+    .header > ul > li:nth-child(3) a,
+    .header > ul.un-log > li:nth-child(5) a,
+    .header > ul.un-log > li:nth-child(6) a{
+        text-align: center;
+    }
+    
+    .header > ul > li:nth-child(5){
+        text-align: left;
+    }
+    
+    .header.show-all > ul > li input{
+        border-radius: 5px;
+    }
+    
+    section .sec-tit:after{
+        width: 30%;
+    }
+    
+    ul.the-form li.lay-2{
+        width: 100%;
+    }
+    
+    footer section > ul > li{
+        width: 50%;
+    }
+}

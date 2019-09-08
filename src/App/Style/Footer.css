@@ -1,0 +1,108 @@
+.footer{
+    background: #E9AE10;
+}
+
+.footer section{
+    padding: 40px 20px;
+}
+
+.footer section > ul{
+    overflow: auto;
+    margin: -10px -10px 10px -10px;
+}
+
+.footer section > ul > li{
+    float: left;
+    width: 25%;
+    padding: 10px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 100;
+    box-sizing: border-box;
+}
+
+.footer section > ul > li > ul{
+    margin: 10px 0 -3px 0;
+    pointer-events: none;
+}
+
+.footer section > ul > li > ul > li{
+    padding: 3px 0;
+}
+
+.footer section > ul > li > ul > li > a{
+    display: block;
+    color: #2E7587;
+    pointer-events: auto;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
+}
+
+.footer section > ul > li > ul:hover > li > a{
+    opacity: .5;
+}
+
+.footer section > ul > li > ul:hover > li > a:hover{
+    opacity: 1;
+    color: #0F801C;
+}
+
+.footer .the-copy{
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, .25);
+    padding: 20px 0 0 0;
+}
+
+.footer .the-copy a{
+    color: #2E7587;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
+}
+
+.footer .the-copy a:hover{
+    color: #0F801C;
+    margin: 0 5px;
+}
+
+.footer .the-copy a.for-image{
+    display: block;
+    width: 150px;
+    margin: 0 auto 10px auto;
+    transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
+}
+
+.footer .the-copy a.for-image:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.footer .the-copy a.for-image img{
+    width: 100%;
+}
+
+.footer .the-copy span{
+    display: block;
+    opacity: .75;
+    font-size: 11px;
+    line-height: 11px;
+    margin: 5px 0 0 0;
+}
+
+.footer .disclaim{
+    padding: 20px 0 0 0;
+    margin: 20px 0 0 0;
+    text-align: center;
+    font-size: 10px;
+    line-height: 10px;
+    opacity: .75;
+    border-top: 1px solid rgba(255, 255, 255, .25);
+}

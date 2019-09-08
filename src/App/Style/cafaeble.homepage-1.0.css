@@ -1,0 +1,709 @@
+section{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section .sec-tit{
+    position: relative;
+    text-align: center;
+    font-size: 28px;
+    line-height: 34px;
+    padding: 0 0 62px 0;
+}
+
+section .sec-tit:after{
+    content: '';
+    position: absolute;
+    height: 5px;
+    background: #2E7587;
+    width: 14%;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    margin: 0 auto;
+}
+.back-white{
+    background: #FFF;
+}
+
+.divider{
+    border-bottom: 1px solid #CCC;
+}
+
+.banner{
+    position: relative;
+    margin: -100px 0 0 0;
+    background: url(../Asset/img/bg-ban.jpg) center center no-repeat;
+}
+
+.banner:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .35);
+    z-index: 0;
+}
+
+.banner section{
+    padding: 260px 20px 200px 20px;
+}
+
+.banner .the-text{
+    position: relative;
+    z-index: 1;
+    color: #FFF;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.banner .the-text div{
+    position: relative;
+    margin: 20px 0 0 0;
+    font-size: 54px;
+    line-height: 64px;
+}
+
+/* 
+.banner .the-text div span{
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid #E9AE10;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+} */
+
+.banner .the-text .react-rotating-text-cursor {
+    /* display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+     */
+     position: relative;
+    margin: 20px 0 0 0;
+    font-size: 54px;
+    line-height: 64px;
+  }
+  
+  @keyframes blinking-cursor {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+
+.banner ul{
+    pointer-events: none;
+    overflow: auto;
+    margin: 10px -10px -20px -10px;
+    position: relative;
+    z-index: 1;
+}
+
+.banner ul li{
+    float: left;
+    padding: 20px 10px;
+}
+
+.banner ul li a{
+    display: block;
+    pointer-events: auto;
+    background: #E9AE10;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #2E7587;
+    text-transform: uppercase;
+    border-radius: 100px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
+}
+
+.banner ul li:last-child a{
+    background: #2E7587;
+    color: #E9AE10;
+}
+
+.banner ul:hover li a{
+    opacity: .5;
+}
+
+.banner ul:hover li a:hover{
+    background: #2E7587;
+    opacity: 1;
+    color: #E9AE10;
+    transform: scale(1.05, 1.05);
+}
+
+.banner ul li:last-child a:hover{
+    background: #E9AE10;
+    color: #2E7587;
+}
+
+.by-num{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2e7587+50,0f801c+100 */
+    background: rgb(46,117,135); /* Old browsers */
+    background: -moz-linear-gradient(45deg, rgba(46,117,135,1) 50%, rgba(15,128,28,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, rgba(46,117,135,1) 50%,rgba(15,128,28,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, rgba(46,117,135,1) 50%,rgba(15,128,28,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e7587', endColorstr='#0f801c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.by-num section{
+    position: relative;
+}
+
+.by-num section .sec-tit{
+    color: #FFF;
+}
+
+.by-num section .sec-tit:after{
+    background: #FFF;
+}
+
+.by-num ul.the-num{
+    overflow: auto;
+    margin: -10px -10px 0 -10px;
+    z-index: 1;
+}
+
+.by-num ul.the-num li{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    color: #FFF;
+    font-size: 72px;
+    line-height: 72px;
+    font-weight: 100;
+}
+
+.by-num ul.the-num li span{
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 5px 0;
+}
+
+.by-num .map-indo{
+    opacity: .125;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    object-fit: cover;
+    position: absolute;
+    z-index: 0;
+}
+
+.ul.list-cafe{
+    margin: 0 0 10px 0;
+    padding: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 50px 10px -40px rgba(0, 0, 0, .1);
+}
+
+ul.list-cafe > li{
+    float: left;
+    width: 33.33%;
+    border: none;
+    border-right: 1px solid #EEE;
+    box-sizing: border-box;
+}
+
+ul.list-cafe > li > a{
+    padding: 20px;
+    color: #FFF;
+    text-align: center;
+}
+
+ul.list-cafe > li > a:hover{
+    color: #FFF;
+}
+
+ul.list-cafe > li > a:after{
+    display: none;
+}
+
+ul.list-cafe > li > a > span{
+    position: relative;
+}
+
+ul.list-cafe > li > a:hover > span{
+    color: #999;
+}
+
+ul.list-cafe > li > a > .covering1{
+    background-image: url(../Asset/img/cafe/eatboss-dago/cover.jpg);
+    padding: 40px;
+    margin: -20px -20px 0 -20px;
+    position: relative;
+    z-index: 1;
+}
+
+ul.list-cafe > li > a > .covering2{
+    background-image: url(../Asset/img/cafe/kopi372-dago/cover.jpg);
+    padding: 40px;
+    margin: -20px -20px 0 -20px;
+    position: relative;
+    z-index: 1;
+}
+
+ul.list-cafe > li > a > .covering3{
+    background-image: url(../Asset/img/cafe/upnormal-riau/cover.jpg);
+    padding: 40px;
+    margin: -20px -20px 0 -20px;
+    position: relative;
+    z-index: 1;
+}
+    /* 1 */
+ul.list-cafe li a .covering1 em{
+    display: block;
+    position: relative;
+    font-style: normal;
+    z-index: 1;
+    font-size: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+ul.list-cafe li a .covering1 span{
+    color: #FFF;
+    position: relative;
+    z-index: 1;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+ul.list-cafe li a .covering1:after{
+    content: '';
+    position: absolute;
+    height: 75%;
+    opacity: .75;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+}
+
+ul.list-cafe li a .covering1 img{
+    display: block;
+    position: relative;
+    float: none;
+    margin: 0 auto 10px auto;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+}
+
+ul.list-cafe li a:hover .covering1 img{
+    border: 2px solid #FFF;
+}
+    /* 2 */
+ul.list-cafe li a .covering2 em{
+    display: block;
+    position: relative;
+    font-style: normal;
+    z-index: 1;
+    font-size: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+ul.list-cafe li a .covering2 span{
+    color: #FFF;
+    position: relative;
+    z-index: 1;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+ul.list-cafe li a .covering2:after{
+    content: '';
+    position: absolute;
+    height: 75%;
+    opacity: .75;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+}
+
+ul.list-cafe li a .covering2 img{
+    display: block;
+    position: relative;
+    float: none;
+    margin: 0 auto 10px auto;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+}
+
+ul.list-cafe li a:hover .covering2 img{
+    border: 2px solid #FFF;
+}
+
+    /* 3 */
+
+ul.list-cafe li a .covering3 em{
+    display: block;
+    position: relative;
+    font-style: normal;
+    z-index: 1;
+    font-size: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+ul.list-cafe li a .covering3 span{
+    color: #FFF;
+    position: relative;
+    z-index: 1;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+ul.list-cafe li a .covering3:after{
+    content: '';
+    position: absolute;
+    height: 75%;
+    opacity: .75;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+}
+
+ul.list-cafe li a .covering3 img{
+    display: block;
+    position: relative;
+    float: none;
+    margin: 0 auto 10px auto;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+}
+
+ul.list-cafe li a:hover .covering3 img{
+    border: 2px solid #FFF;
+}
+
+ul.list-cafe li a .the-rating{
+    margin: 11px 0 0 0;
+    font-size: 20px;
+    line-height: 24px;
+    color: #999;
+    position: relative;
+    z-index: 0;
+}
+
+ul.list-cafe li a .the-rating .fa-star,
+ul.list-cafe li a .the-review .fa-users{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    font-size: 300px;
+    margin: -130px auto 0 auto;
+    color: rgba(233, 174, 16, .25);
+    z-index: 0;
+}
+
+ul.list-cafe li a .the-rating strong,
+ul.list-cafe li a .the-review strong{
+    font-size: 54px;
+    line-height: 58px;
+    font-weight: 100;
+    color: #2E7587;
+    margin: 0 2px 0 0;
+    position: relative;
+    z-index: 1;
+}
+
+ul.list-cafe li a ul.the-meter{
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 5px 0 7px 0;
+}
+
+ul.list-cafe li a ul.the-meter li{
+    width: 100%;
+    height: 10px;
+}
+
+ul.list-cafe li a .the-review{
+    margin: 11px 0 0 0;
+    color: #999;
+}
+
+ul.list-cafe li a .the-review .fa-users{
+    font-size: 240px;
+    margin: -20px auto 0 auto;
+}
+
+ul.list-brand{
+    overflow: auto;
+    margin: -20px;
+}
+
+ul.list-brand li{
+    float: left;
+    padding: 20px;
+    width: 16.66%;
+    box-sizing: border-box;
+}
+
+ul.list-brand li a{
+    display: block;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
+}
+
+ul.list-brand li a:hover{
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    transform: scale(1.1, 1.1);
+}
+
+ul.list-brand li a img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.many{
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    line-height: 18px;
+    margin: 20px 0 0 0;
+    color: #999;
+}
+
+.many:before,
+.many:after{
+    content: '';
+    position: absolute;
+    width: 40%;
+    left: 0;
+    top: 50%;
+    border-bottom: 1px solid #E9AE10;
+}
+
+.many:after{
+    left: auto;
+    right: 0;
+}
+
+.last-sec{
+    background: url(../Asset/img/bg.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.last-sec:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .85;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2e7587+50,0f801c+100 */
+    background: rgb(46,117,135); /* Old browsers */
+    background: -moz-linear-gradient(45deg, rgba(46,117,135,1) 50%, rgba(15,128,28,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, rgba(46,117,135,1) 50%,rgba(15,128,28,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, rgba(46,117,135,1) 50%,rgba(15,128,28,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e7587', endColorstr='#0f801c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    z-index: 0;
+}
+
+.last-sec section{
+    position: relative;
+    z-index: 1;
+}
+
+.last-sec section .sec-tit{
+    color: #FFF;
+}
+
+.last-sec section .sec-tit:after{
+    background: #FFF;
+}
+
+.single-text{
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFF;
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1600px){}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .banner section{
+        padding: 180px 40px 120px 40px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+    ul.list-brand{
+        width: 70%;
+        margin: -20px auto;
+    }
+    
+    .single-text{
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+    .by-num ul.the-num{
+        margin: -20px 0;
+    }
+    
+    .by-num ul.the-num li{
+        width: 100%;
+        padding: 20px 0;
+    }
+    
+    .many:before, .many:after{
+        width: 35%;
+    }
+    
+    ul.list-cafe li a .covering{
+        padding: 40px 20px;
+    }
+    
+    ul.list-cafe li a .the-rating .fa-star{
+        font-size: 200px;
+        margin: -85px auto 0 auto;
+    }
+    
+    ul.list-cafe li a .the-review .fa-users{
+        font-size: 200px;
+        margin: 10px auto 0 auto;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .banner section{
+        padding: 180px 40px 120px 40px;
+    }
+    
+    .by-num ul.the-num{
+        margin: -20px 0;
+    }
+    
+    .by-num ul.the-num li{
+        width: 100%;
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 767px) and (orientation: landscape){
+    .banner .the-text{
+        font-size: 20px;
+        line-height: 20px;
+    }
+    
+    .banner .the-text div{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    
+    .many:before, .many:after{
+        width: 35%;
+    }
+    
+    ul.list-cafe li a .covering{
+        padding: 40px 20px;
+    }
+    
+    ul.list-cafe li a .the-rating .fa-star{
+        font-size: 200px;
+        margin: -85px auto 0 auto;
+    }
+    
+    ul.list-cafe li a .the-review .fa-users{
+        font-size: 200px;
+        margin: 10px auto 0 auto;
+    }
+    
+    .last-sec section .sec-tit:after{
+        top: 82px;
+    }
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait){
+    .banner .the-text{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    .banner .the-text div{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    
+    ul.list-cafe > li{
+        width: 100%;
+    }
+    
+    ul.list-brand li{
+        width: 33.33%;
+    }
+    
+    .many:before, .many:after{
+        width: 20%;
+    }
+}
